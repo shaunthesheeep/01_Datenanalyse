@@ -171,7 +171,7 @@ require(ggplot2)
 ggplot(df_combined_clean, aes(x = measperday, y = Depression, color = Sleep)) +
   geom_point(alpha = 0.6) +
   geom_smooth(method = "lm", aes(group = Sleep), se = FALSE) +
-  geom_smooth(method = "lm", color = "red", lwd = 1, se = FALSE) +
+  geom_smooth(method = "lm", color = "blue", lwd = 1, se = FALSE) +
   labs(title = "Effect of Sleep Quality on Depression Throughout the Day",
        x = "Measurement Timepoints (measperday)",
        y = "Depression Score") +
